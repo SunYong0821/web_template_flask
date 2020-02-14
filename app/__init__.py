@@ -10,6 +10,6 @@ def page_not_found(error):
 
 # 所有对象要在注册之前初始化，否则找不到该对象
 
-from app.index import index
+from app.home import home
 
-app.register_blueprint(index, url_prefix="/index")
+app.register_blueprint(home)
